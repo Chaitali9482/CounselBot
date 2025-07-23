@@ -1,48 +1,70 @@
-# Welcome to CounselBot
-CounselBot is a web-based application to help students to make effective career choices.
-It is a very user-friendly platform which will surely be very easy to use and a powerful tool for all students.
-## Use CounselBot to:
-- Getting answers to general questions related to colleges and all the streams
-- Take an in-depth quiz to find more bout yourself and career suitable for you
-- Get a very detailed report which will provide you info about the top 5 professions you are inclined to.
+# Welcome to CounselBot 🎓
 
-CounselBot Web-app runs on Windows, Linux, Mac and even Android. It is a web application that can easily be moulded according to our needs. It has this flexibility as it uses Streamlit as its platform.
-This is the open-source repository for the CounselBot web-app. 
+**CounselBot** is a smart career guidance chatbot designed to help students explore the most suitable career paths based on their interests and background. Built using **Python, TensorFlow, and Streamlit**, it’s intuitive, powerful, and easily customizable.
 
-![](img/21.png)
+This is the official open-source repository of **CounselBot**, created and maintained by [Chaitali9482](https://github.com/Chaitali9482).
 
-## Features
-- Initially, in this app, you are greeted with a chatbot, made by us from very scratch by using TensorFlow.
-- It will answer all your basic questions regarding career, streams, subjects, and colleges. You can also ask the bot for starting your test.
-- The personality test is an in-depth test that’ll analyse and access you with effective career choices.
-- After the test, you will receive a detailed report on the top 5 occupations recommended by our Web application. It will give you a brief introduction to those professions. 
+![CounselBot UI](img/21.png)
 
-# Steps for usage
-- Setting up the Python Environment with dependencies:
+---
 
-        pip install tensorflow
-        pip install bokeh
-        pip install numpy
-        pip install pandas
-        pip install streamlit
-        pip install joblib
-        pip install pathlib
-        pip install nltk
+## 🚀 What Can CounselBot Do?
 
-- Cloning the Repository: 
+- ✅ Answer general questions about colleges, streams, subjects, and careers  
+- ✅ Start an interactive **personality test** to understand the best-fit careers for you  
+- ✅ Generate a **detailed report** recommending the **Top 5 professions** aligned to your profile  
+- ✅ Friendly web interface — works on Windows, Linux, Mac, and Android via browser
 
-        git clone https://github.com/Nivetha2312/Hacknight-CounselBot.git
-- Enter The directory: 
+---
 
-        cd Hacknight-CounselBot
-- Run the Python setup:
-        
-        python setup.py
-- Run the App:
+## 🧠 Key Features
 
-        streamlit run app.py
-- Stop the app from terminal:
+- 🤖 Custom-built chatbot (no third-party APIs!) using **TensorFlow** and **FastText**
+- 📊 Personality test and scoring engine
+- 📋 CSV-driven datasets for subjects, occupations, and graduate programs
+- 📁 Web app built using **Streamlit** — fast, responsive, and customizable
 
-        Ctrl+C
+---
 
-That's it!
+## ⚙️ How to Set It Up
+
+### 1. 📦 Install Dependencies
+
+```bash
+pip install tensorflow
+pip install bokeh
+pip install numpy
+pip install pandas
+pip install streamlit
+pip install joblib
+pip install pathlib
+pip install nltk
+
+
+
+
+Clone This Repository
+git clone https://github.com/Chaitali9482/CounselBot.git
+cd CounselBot
+
+
+Run the App
+python setup.py
+streamlit run app.py
+
+
+CounselBot/
+│
+├── app.py              # Main Streamlit app
+├── counselor.py        # Personality test logic
+├── imagify.py          # Image management utility
+├── Graduate.csv        # Graduation options
+├── Occupations.csv     # Career dataset
+├── Subjects.csv        # Subjects dataset
+├── bot.csv             # Q&A database
+├── botmodel.h5         # Trained chatbot model
+├── tokenizer_t.pkl     # Tokenizer
+├── words.pkl           # Word index
+├── img/                # Static images
+└── README.md           # You're reading it
+
